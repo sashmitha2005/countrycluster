@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cluster Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db; /* Blue title */
+            margin-top: 50px;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #ecf0f1; /* Light text for results */
+            margin: 15px 0;
+        }
+
+        strong {
+            color: #3498db; /* Blue for labels */
+        }
+
+        .result-container {
+            background-color: #333;
+            padding: 30px;
+            margin: 20px auto;
+            width: 70%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: #3498db; /* Blue link */
+            font-size: 18px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        @media (max-width: 768px) {
+            .result-container {
+                width: 80%; /* Adjust container width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Cluster Prediction Result</h1>
+        
+        <p><strong>Country:</strong> {{ country }}</p>
+        <p><strong>Cluster:</strong> {{ cluster }}</p>
+        <p><strong>Category:</strong> {{ category }}</p>
+        
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
